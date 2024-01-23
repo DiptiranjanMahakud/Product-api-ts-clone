@@ -15,6 +15,10 @@ app.use(express.json());
 // Mount the ProductRoutes at the specified path
 app.use("/api", ProductRoutes);
 
+app.get("/", (req:any, res:any) => {
+    res.send("Hello, World!");
+});
+
 // Start the server and listen on the specified port
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
