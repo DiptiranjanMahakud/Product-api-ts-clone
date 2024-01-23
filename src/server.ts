@@ -7,7 +7,7 @@ const ProductRoutes = require("./routes");
 const app = express();
 
 // Set the port for the server
-const port = 3000;
+const port = 3001;
 
 // Middleware to parse incoming JSON requests
 app.use(express.json());
