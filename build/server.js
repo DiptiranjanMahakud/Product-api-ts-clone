@@ -1,5 +1,6 @@
 "use strict";
 const express = require("express");
+var logger = require('./logger');
 // Import the ProductRoutes module
 const ProductRoutes = require("./routes");
 // Create an Express application
@@ -11,9 +12,11 @@ app.use(express.json());
 // Mount the ProductRoutes at the specified path
 app.use("/api", ProductRoutes);
 app.get("/", (req, res) => {
-    res.send("Hello, World!");
+    //     res.send("Hello, World!");
+    req.log.info(req, 'Request to server');
+    res.send({ hello: "world" });
 });
 // Start the server and listen on the specified port
 app.listen(port, () => {
-    console.log(`App listening on port ${port}`);
+    logger.info(`App listening on port ${port}`);
 });

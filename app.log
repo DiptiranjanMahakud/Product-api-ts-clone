@@ -1,0 +1,60 @@
+[12:10:19.739] ERROR (25940): Error occurred durring division
+    err: {
+      "type": "Error",
+      "message": "can not divied",
+      "stack":
+          Error: can not divied
+              at divide (C:\Akrabhi_softlabs\Product api using ts\Product-api-ts-clone\build\server.js:6:15)
+              at Object.<anonymous> (C:\Akrabhi_softlabs\Product api using ts\Product-api-ts-clone\build\server.js:29:21)
+              at Module._compile (node:internal/modules/cjs/loader:1241:14)
+              at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+              at Module.load (node:internal/modules/cjs/loader:1091:32)
+              at Module._load (node:internal/modules/cjs/loader:938:12)
+              at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+              at node:internal/main/run_main_module:23:47
+    }
+[13:59:26.831] INFO (john doe/27616): Employee Record
+    id: 1
+    age: 35
+    password: "[Redacted]"
+    address: "[Redacted]"
+[14:00:10.636] INFO (john doe/21832): Employee Record
+    id: 1
+    age: 35
+[14:16:05.446] INFO (john doe/6760): Employee Record
+    id: 1
+    age: 35
+[15:19:43.523] INFO (12468): App listening on port 3001
+[15:25:52.766] INFO (26968): App listening on port 3001
+[15:52:48.267] INFO (2260): App listening on port 3001
+[15:53:29.025] INFO (27364): App listening on port 3001
+[16:07:47.620] INFO (18996): App listening on port 3001
+[16:16:14.000] INFO (23848): App listening on port 3001
+[16:17:08.226] INFO (12476): yes it is running now 
+[16:17:08.228] INFO (12476): App listening on port 3001
+[16:17:38.808] INFO (4232): App listening on port 3001
+[17:16:22.866] INFO (17856): App listening on port 3001
+[17:20:53.558] INFO (26664): App listening on port 3001
+[17:21:15.252] INFO (10296): App listening on port 3001
+[17:21:22.577] INFO (25468): App listening on port 3001
+[17:21:35.885] INFO (12724): App listening on port 3001
+[17:23:50.008] INFO (20588): App listening on port 3001
+[17:23:54.437] INFO (20552): App listening on port 3001
+[17:23:56.722] INFO (2996): App listening on port 3001
+[17:24:01.003] INFO (23712): App listening on port 3001
+[17:25:41.809] INFO (4776): App listening on port 3001
+[17:35:21.431] INFO (3384): App listening on port 3001
+[17:42:30.605] INFO (10460): App listening on port 3001
+    host: "DIPTI"
+[17:43:35.195] INFO (25620): App listening on port 3001
+    host: "DIPTI"
+    node_version: "v20.9.0"
+[17:51:26.875] INFO (12036): App listening on port 3001
+    host: "DIPTI"
+    node_version: "v20.9.0"
+[18:19:43.360] INFO (19348): App listening on port 3001
+    host: "DIPTI"
+    node_version: "v20.9.0"
+[18:20:01.538] INFO (12592): App listening on port 3001
+    host: "DIPTI"
+    node_version: "v20.9.0"

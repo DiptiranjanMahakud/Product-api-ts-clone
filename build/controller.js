@@ -1,12 +1,14 @@
 "use strict";
 var pool = require('./db');
 const queries = require('./queries');
+var logger = require('./logger');
 // Function to retrieve all product list of a company as per the product's available units
 var getAllProductsForCompany = (req, res) => {
     const companyId = parseInt(req.params.cmpId);
     pool.query(queries.getAllProductsForCompany, [companyId], (error, results) => {
         if (error) {
-            console.error(error);
+            //console.error(error);
+            logger.error(error, 'Error querying database');
             res.status(500).json({ error: 'Internal Server Error' });
         }
         else {
@@ -19,7 +21,8 @@ var getProductDetailsForCompany = (req, res) => {
     const companyId = parseInt(req.params.cmpId);
     pool.query(queries.getProductDetailsForCompany, [companyId], (error, results) => {
         if (error) {
-            console.error(error);
+            //console.error(error);
+            logger.error(error, 'Error querying database');
             res.status(500).json({ error: 'Internal Server Error' });
         }
         else {
@@ -32,7 +35,8 @@ var getProductsAboveAvgDiscount = (req, res) => {
     const companyId = parseInt(req.params.cmpId);
     pool.query(queries.getProductsAboveAvgDiscount, [companyId], (error, results) => {
         if (error) {
-            console.error(error);
+            //console.error(error);
+            logger.error(error, 'Error querying database');
             res.status(500).json({ error: 'Internal Server Error' });
         }
         else {
@@ -44,7 +48,8 @@ var getProductsAboveAvgDiscount = (req, res) => {
 var getCompaniesWithMostDiscounts = (req, res) => {
     pool.query(queries.getCompaniesWithMostDiscounts, (error, results) => {
         if (error) {
-            console.error(error);
+            //console.error(error);
+            logger.error(error, 'Error querying database');
             res.status(500).json({ error: 'Internal Server Error' });
         }
         else {
